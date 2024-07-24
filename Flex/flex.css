@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    word-spacing: 1.4px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #0f172a;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #f1f5f9;
+    width: 80%;
+    height: 90vh;
+    margin: 0 auto;
+    border-width: 10px;
+    border-color: #000e2e;
+    border-style: outset;
+    gap: 10px;
+    padding: 10px;
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    background-color: #fb7185;
+    padding: 1em;
+    font-weight: 700;
+    color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #e11d48;
+    border-radius: 10px;
+}
+
+/* Flex */
+.container{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+}
+
+
+/* JUSTIFY-CONTENT */
+.container {
+    justify-content: center;
+
+    /* justify-content: baseline;  */
+    /* This is not a valid value for justify-content, 
+    but it's valid for align-items. It aligns items along their baseline */
+
+    /* justify-content: center;  */
+    /* This will center the child elements horizontally 
+    (along the main axis, which is the X axis by default) */
+
+    /* justify-content: flex-start;  */
+    /* This will align the child elements to the start 
+    (left) of the container (along the main axis, which is the X axis by default) */
+
+    /* justify-content: flex-end;  */
+    /* This will align the child elements to the end 
+    (right) of the container (along the main axis, which is the X axis by default) */
+
+    /* justify-content: space-between; */
+    /* This will distribute the child elements evenly with equal space between them 
+    (along the main axis, which is the X axis by default), 
+    but no space at the start or end of the container */
+
+    /* justify-content: space-around; */
+    /* This will distribute the child elements with equal space around them 
+    (along the main axis, which is the X axis by default). 
+    This means the space on the ends of the container will be half of the space between elements */
+
+    /* justify-content: space-evenly; */
+    /* This will distribute the child elements with equal space around them 
+    (along the main axis, which is the X axis by default). 
+    This means the space on the ends of the container will be equal to the space between elements */
+
+    /* justify-content: start; */
+    /* This is the same as flex-start, aligning the child elements to the start 
+    (left) of the container (along the main axis, which is the X axis by default) */
+
+    /* justify-content: end; */
+    /* This is the same as flex-end, aligning the child elements to the end 
+    (right) of the container (along the main axis, which is the X axis by default) */
+
+    /* justify-content: left; */
+    /* This will align the child elements to the left of the container. 
+    (Same as flex-start in left-to-right languages) */
+
+    /* justify-content: right; */
+    /* This will align the child elements to the right of the container. 
+    (Same as flex-end in left-to-right languages) */
+    
+    
+    
+}
+
+/* ALIGN-ITEMS */
+
+.container {
+    align-items: center;
+
+    /* align-items: baseline; */
+    /* This will align the child elements along their baselines (the line upon which most letters "sit" and below which descenders extend) */
+
+    /* align-items: center; */
+    /* This will center the child elements vertically (along the cross axis, which is the Y axis by default) */
+
+    /* align-items: flex-start; */
+    /* This will align the child elements to the start (top) of the container (along the cross axis, which is the Y axis by default) */
+
+    /* align-items: flex-end; */
+    /* This will align the child elements to the end (bottom) of the container (along the cross axis, which is the Y axis by default) */
+
+    /* align-items: stretch; */
+    /* This will stretch the child elements to fill the container (along the cross axis, which is the Y axis by default). This only applies if the child elements do not have a fixed height */
+
+    /* align-items: start; */
+    /* This is the same as flex-start, aligning the child elements to the start (top) of the container (along the cross axis, which is the Y axis by default) */
+
+    /* align-items: end; */
+    /* This is the same as flex-end, aligning the child elements to the end (bottom) of the container (along the cross axis, which is the Y axis by default) */
+
+    /* align-items: self-start; */
+    /* This will align the child elements to the start of their own individual alignment container (similar to flex-start but respects individual flex item alignment properties) */
+
+    /* align-items: self-end; */
+    /* This will align the child elements to the end of their own individual alignment container (similar to flex-end but respects individual flex item alignment properties) */
+
+}
