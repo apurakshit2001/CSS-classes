@@ -1,0 +1,65 @@
+/* Sets the container to be a flex container */
+.container {
+    display: flex; /* Enables flexbox layout for direct children */
+  }
+  
+  /* Aligns flex items along the main axis (default: horizontal) */
+  .container {
+    flex-direction: row; /* Aligns items in a row (default) */
+    flex-direction: column; /* Aligns items in a column */
+  }
+  
+  /* Aligns flex items along the cross axis (default: vertical) */
+  .container {
+    justify-content: flex-start; /* Aligns items at the start of the main axis (default) */
+    justify-content: center; /* Centers items along the main axis */
+    justify-content: space-between; /* Distributes items with space between them */
+    justify-content: space-around; /* Distributes items with space around them */
+    justify-content: space-evenly; /* Distributes items with equal space between them */
+  }
+  
+  /* Aligns flex items on the cross axis (perpendicular to the main axis) */
+  .container {
+    align-items: stretch; /* Stretches items to fill the container (default) */
+    align-items: flex-start; /* Aligns items at the start of the cross axis */
+    align-items: center; /* Centers items along the cross axis */
+    align-items: flex-end; /* Aligns items at the end of the cross axis */
+    align-items: baseline; /* Aligns items along their baselines */
+  }
+  
+  /* Aligns flex items individually along the cross axis */
+  .item {
+    align-self: auto; /* Default alignment based on align-items */
+    align-self: flex-start; /* Aligns the item at the start of the cross axis */
+    align-self: center; /* Centers the item along the cross axis */
+    align-self: flex-end; /* Aligns the item at the end of the cross axis */
+    align-self: baseline; /* Aligns the item along its baseline */
+    align-self: stretch; /* Stretches the item to fill the container */
+  }
+  
+  /* Defines how flex items should grow or shrink to fit the container */
+  .item {
+    flex-grow: 1; /* Allows the item to grow and fill available space */
+    flex-shrink: 1; /* Allows the item to shrink if necessary */
+    flex-basis: auto; /* Defines the initial size of the item before growing/shrinking */
+    flex-basis: 100px; /* Sets a fixed initial size for the item */
+    flex: 1 1 auto; /* Shorthand for flex-grow, flex-shrink, and flex-basis */
+  }
+  
+  /* Defines the flex container's wrapping behavior */
+  .container {
+    flex-wrap: nowrap; /* Prevents flex items from wrapping (default) */
+    flex-wrap: wrap; /* Allows flex items to wrap onto multiple lines */
+    flex-wrap: wrap-reverse; /* Wraps flex items in reverse order */
+  }
+  
+  /* Aligns flex lines within the flex container */
+  .container {
+    align-content: flex-start; /* Aligns flex lines at the start of the container */
+    align-content: center; /* Centers flex lines within the container */
+    align-content: flex-end; /* Aligns flex lines at the end of the container */
+    align-content: space-between; /* Distributes flex lines with space between them */
+    align-content: space-around; /* Distributes flex lines with space around them */
+    align-content: space-evenly; /* Distributes flex lines with equal space between them */
+  }
+  
