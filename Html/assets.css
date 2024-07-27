@@ -1,0 +1,52 @@
+.item {
+    background-position: center;
+    background-size: contain;
+}
+
+.item-1 {
+    background-image: url(https://i.pinimg.com/564x/ee/20/ce/ee20ce783a3c0ec956e6575b5e82da50.jpg);
+}
+
+.item-2 {
+    background-image: url(https://i.pinimg.com/736x/2d/89/66/2d8966c1e972bb5724100bb21dd890a8.jpg);
+}
+
+.item-3 {
+    background-image: url(https://i.pinimg.com/564x/71/95/0c/71950c34ad76084d84b6dde930047689.jpg);
+}
+
+.item-4 {
+    background-image: url(https://i.pinimg.com/736x/98/91/4c/98914cb697f6de0990f26d2020815351.jpg);
+}
+
+.item-5 {
+    background-image: url(https://i.pinimg.com/736x/2e/07/96/2e0796f1bba473b61f5310ea8e0645e3.jpg);
+}
+
+.item-6 {
+    background-image: url(https://i.pinimg.com/736x/45/e0/19/45e0197c5b8a0611a1b0af8aac7a6a12.jpg);
+}
+
+.item-6 {
+    background-image: url(https://i.pinimg.com/736x/45/e0/19/45e0197c5b8a0611a1b0af8aac7a6a12.jpg);
+}
+
+.item-7 {
+    background-image: url(https://i.pinimg.com/736x/cb/35/4f/cb354fa4f6151c10ab54e8338cb746a0.jpg);
+}
+
+.item-8 {
+    background-image: url(https://i.pinimg.com/564x/1b/9d/55/1b9d557878cb5315ab72365ed8ed9f11.jpg);
+}
+
+.item-9 {
+    background-image: url(https://i.pinimg.com/564x/c4/c0/aa/c4c0aa6d3b728d9aa6ab8163b694172b.jpg);
+}
+
+.item-10 {
+    background-image: url(https://i.pinimg.com/564x/67/3e/42/673e42811328bc8a7409f16910b21a0d.jpg);
+}
+
+.item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
