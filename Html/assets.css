@@ -1,6 +1,6 @@
 .item {
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 .item-1 {
