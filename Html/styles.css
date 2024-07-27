@@ -72,3 +72,25 @@ body {
     filter: brightness(0.1);
     transform: translateZ(15px) rotateY(-5deg);
 }
+
+@media screen and (max-width:450px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .list {
+        height: 50%;
+    }
+    .list{
+        transform: rotate(90deg);
+        align-items: center;
+    }
+}
