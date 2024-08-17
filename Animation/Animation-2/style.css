@@ -1,0 +1,70 @@
+* , html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.spin-box{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(41, 152, 243);
+    box-shadow: 0px 0px 10px black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: spin;
+    animation-duration: 3s; /* we need to define how long the animation should be */
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s; /* how long the animation should wait before playing */
+    /* animation-iteration-count: 2; controls how many times the animation should play. It's by default 1 */
+    animation-direction: reverse; /* Normally the animation goes from start to end. With this we can reverse this.
+    IF you have multiple iterations  you can also use 'alternate-reverse' to alternate between reverse and normal. */
+    animation-fill-mode: forwards; /* controls what happens when the animation is done.
+    By default it goes back to the original state.
+    With 'forwards' it stays in the last state of
+    the animation. */
+
+
+
+    /* you can also be lazy and smart as you should be and combine all this animation css into one line. */
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    /* you just have to remember the order of the properties */
+}
+
+@keyframes spin {
+    0% {}
+
+    50% {
+        scale: 2;
+        transform: rotate(0deg);
+        border-radius: 0;
+    }
+
+    100%{
+        transform: rotate(360deg);
+        border-radius: 50%;
+        scale: 2;
+    }
+}
+
+/* another cool css is - */
+/* lets say we have a infinite looping animation */
+/* .spin-box {
+    animation-iteration-count: infinite; 
+    animation-play-state: running;
+}
+.spin-box:hover{
+    animation-play-state: paused;
+} */
+
+/* If done then go to animation-3 */

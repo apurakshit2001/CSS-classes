@@ -1,0 +1,49 @@
+* , html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.spin-box{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(41, 152, 243);
+    box-shadow: 0px 0px 10px black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: spin;
+    animation-duration: 3s; /* we need to define how long the animation should be */
+}
+@keyframes spin {
+    0% {}
+
+    /*ok now lets more complex by increasing the size midpoint in animation*/
+    50% {
+        /* scale: 2; */
+        /*ok now if we want keep this increasing 
+        size effect till the end of the animation we need to add this line into the 100% also*/
+
+        /* ok now i want the rotation to start after the it fully goes to 100% */
+        /* transform: rotate(0deg);
+        border-radius: 0; */
+    }
+
+    100%{
+        transform: rotate(360deg);
+        /* border-radius: 50%;
+        scale: 2; */
+    }
+}
+
+/* If you have no problem understanding this, only then go to animation-2. */

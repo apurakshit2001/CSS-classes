@@ -1,0 +1,71 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    text-align: end;
+    border-bottom: 1px outset black;
+}
+
+/* Container for each transform example */
+.example-container {
+    margin: 20px 0;
+}
+
+/* Basic style for the box */
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #4CAF50;
+    transition: transform 0.5s ease;
+}
+
+/* rotate(): Rotates the box by a certain angle */
+.box.rotate.animate {
+    /* Rotates the box by 45 degrees */
+    transform: rotate(45deg);
+    transition-delay: 100ms;
+}
+
+/* translate(): Moves the box along the X and Y axis */
+.box.translate.animate {
+    /* Moves the box 50px to the right and 30px down */
+    transform: translate(50px, 30px);
+    transition-delay: 300ms;
+}
+
+/* scale(): Resizes the box */
+.box.scale.animate {
+    /* Doubles the size of the box */
+    transform: scale(2);
+    transition-delay: 900ms;
+}
+
+/* skew(): Skews the box along the X and Y axis */
+.box.skew.animate {
+    /* Skews the box by 20 degrees along the X axis */
+    transform: skew(20deg);
+    transition-delay: 1000ms;
+}
+
+/* matrix(): Combines multiple transform functions into one */
+.box.matrix.animate {
+    /* Uses a matrix to rotate, scale, and translate the box */
+    transform: matrix(1, 0.5, 0.5, 1, 30, 20);
+    transition-delay: 1500ms;
+}
+
+
+/* if clear then go to animation-3 for advace demo */

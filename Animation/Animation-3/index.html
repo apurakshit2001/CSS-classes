@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Properties</title>
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.querySelector('.rotate').classList.add('animate');
+                document.querySelector('.translate').classList.add('animate');
+                document.querySelector('.scale').classList.add('animate');
+                document.querySelector('.skew').classList.add('animate');
+                document.querySelector('.matrix').classList.add('animate');
+            }, 100);
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Learn CSS Transform Properties</h1>
+    
+    <div class="example-container">
+        <h2>rotate()</h2>
+        <div class="box rotate"></div>
+    </div>
+    
+    <div class="example-container">
+        <h2>translate()</h2>
+        <div class="box translate"></div>
+    </div>
+    
+    <div class="example-container">
+        <h2>scale()</h2>
+        <div class="box scale"></div>
+    </div>
+    
+    <div class="example-container">
+        <h2>skew()</h2>
+        <div class="box skew"></div>
+    </div>
+    
+    <div class="example-container">
+        <h2>matrix()</h2>
+        <div class="box matrix"></div>
+    </div>
+</body>
+</html>
