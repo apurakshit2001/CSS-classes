@@ -1,0 +1,47 @@
+
+html, body {
+    height: 100%; 
+    margin: 0;   
+    padding: 0;  
+}
+
+/* This is the main grid container that holds all other parts */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header header"  /* The first row is for the header, it takes up two columns */
+        "content sidebar"/* The second row has content on the left and a sidebar on the right */
+        "footer footer"; /* The third row is for the footer, it also takes up two columns */
+    grid-gap: 10px; /* Adds space between the grid items */
+    padding: 10px;  
+    width: 100%;    
+    height: 100%;   
+    box-sizing: border-box; /* Includes padding within the width and height */
+}
+
+
+.header {
+    grid-area: header; /* Assigns this section to the 'header' area in the grid */
+    background-color: #f3a683; 
+    padding: 20px; 
+}
+
+.content {
+    grid-area: content; /* Assigns this section to the 'content' area in the grid */
+    background-color: #778beb;
+    padding: 20px; 
+}
+
+.sidebar {
+    grid-area: sidebar; /* Assigns this section to the 'sidebar' area in the grid */
+    background-color: #e77f67; 
+    padding: 20px; 
+}
+
+/* Style for the footer */
+.footer {
+    grid-area: footer; /* Assigns this section to the 'footer' area in the grid */
+    background-color: #cf6a87; 
+    padding: 20px; 
+    text-align: center; 
+}

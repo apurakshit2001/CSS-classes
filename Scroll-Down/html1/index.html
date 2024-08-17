@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            /* Make the page tall enough to scroll */
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            height: 100vh;
+            /* Make the container tall enough to scroll */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .scroll-box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateX(-100%) scale(0.5) rotate(-30deg);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .scroll-box.visible {
+            opacity: 1;
+            transform: translateX(0) scale(1.2) rotate(10deg);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .scroll-box.animate {
+            transform: translateX(0) scale(1) rotate(0);
+            transition: transform 0.7s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="scroll-box"></div>
+    </div>
+    <script>
+        document.addEventListener("click", function () {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        setTimeout(() => {
+                            entry.target.classList.add('animate');
+                        }, 500);
+                    } else {
+                        entry.target.classList.remove('visible');
+                        entry.target.classList.remove('animate');
+                    }
+                });
+            }, { threshold: 0.5 }); // Trigger when 50% of the element is in view
+
+            const scrollBox = document.querySelector('.scroll-box');
+            observer.observe(scrollBox);
+        });
+    </script>
+</body>
+
+</html>
