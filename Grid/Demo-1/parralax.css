@@ -1,0 +1,138 @@
+/* Parallax effect for card backgrounds */
+.grid-item {
+    background-attachment: fixed; /* Creates the parallax effect */
+    background-size: cover; /* Ensures the image covers the entire card */
+    background-position: center; /* Centers the image */
+    filter: contrast(1);
+}
+
+/* Background images for each card */
+.card1 {
+    background-image: url(https://i.pinimg.com/736x/18/e2/b4/18e2b4c03f668435146ca8ec75a05489.jpg);
+}
+
+.card2 {
+    background-image: url(https://i.pinimg.com/736x/18/e2/b4/18e2b4c03f668435146ca8ec75a05489.jpg);
+}
+
+.card3 {
+    background-image: url(https://i.pinimg.com/736x/18/e2/b4/18e2b4c03f668435146ca8ec75a05489.jpg);
+}
+
+.card4 {
+    background-image: url(https://i.pinimg.com/736x/18/e2/b4/18e2b4c03f668435146ca8ec75a05489.jpg);
+}
+
+.card5 {
+    background-image: url(https://i.pinimg.com/736x/18/e2/b4/18e2b4c03f668435146ca8ec75a05489.jpg);
+}
+
+.card6 {
+    background-image: url(https://i.pinimg.com/736x/18/e2/b4/18e2b4c03f668435146ca8ec75a05489.jpg);
+}
+
+.card7 {
+    background-image: url(https://i.pinimg.com/736x/18/e2/b4/18e2b4c03f668435146ca8ec75a05489.jpg);
+}
+
+.card8 {
+    background-image: url(https://i.pinimg.com/736x/18/e2/b4/18e2b4c03f668435146ca8ec75a05489.jpg);
+}
+
+.card9 {
+    background-image: url(https://i.pinimg.com/736x/18/e2/b4/18e2b4c03f668435146ca8ec75a05489.jpg);
+}
+
+.card10 {
+    background-image: url(https://i.pinimg.com/736x/18/e2/b4/18e2b4c03f668435146ca8ec75a05489.jpg);
+}
+
+.card11 {
+    background-image: url(https://i.pinimg.com/736x/18/e2/b4/18e2b4c03f668435146ca8ec75a05489.jpg);
+}
+
+.card12 {
+    background-image: url(https://i.pinimg.com/736x/18/e2/b4/18e2b4c03f668435146ca8ec75a05489.jpg);
+}
+
+.card13 {
+    background-image: url(https://i.pinimg.com/736x/18/e2/b4/18e2b4c03f668435146ca8ec75a05489.jpg);
+}
+
+.card14 {
+    background-image: url(https://i.pinimg.com/736x/18/e2/b4/18e2b4c03f668435146ca8ec75a05489.jpg);
+}
+
+.card15 {
+    background-image: url(https://i.pinimg.com/736x/18/e2/b4/18e2b4c03f668435146ca8ec75a05489.jpg);
+}
+
+.card16 {
+    background-image: url(https://i.pinimg.com/736x/18/e2/b4/18e2b4c03f668435146ca8ec75a05489.jpg);
+}
+
+@media screen and (max-width:500px) {
+    .card1 {
+        background-image: url(https://i.pinimg.com/564x/55/4d/51/554d51679261af6d90259d8b630de8f1.jpg);
+    }
+    
+    .card2 {
+        background-image: url(https://i.pinimg.com/564x/55/4d/51/554d51679261af6d90259d8b630de8f1.jpg);
+    }
+    
+    .card3 {
+        background-image: url(https://i.pinimg.com/564x/55/4d/51/554d51679261af6d90259d8b630de8f1.jpg);
+    }
+    
+    .card4 {
+        background-image: url(https://i.pinimg.com/564x/55/4d/51/554d51679261af6d90259d8b630de8f1.jpg);
+    }
+    
+    .card5 {
+        background-image: url(https://i.pinimg.com/564x/55/4d/51/554d51679261af6d90259d8b630de8f1.jpg);
+    }
+    
+    .card6 {
+        background-image: url(https://i.pinimg.com/564x/55/4d/51/554d51679261af6d90259d8b630de8f1.jpg);
+    }
+    
+    .card7 {
+        background-image: url(https://i.pinimg.com/564x/55/4d/51/554d51679261af6d90259d8b630de8f1.jpg);
+    }
+    
+    .card8 {
+        background-image: url(https://i.pinimg.com/564x/55/4d/51/554d51679261af6d90259d8b630de8f1.jpg);
+    }
+    
+    .card9 {
+        background-image: url(https://i.pinimg.com/564x/55/4d/51/554d51679261af6d90259d8b630de8f1.jpg);
+    }
+    
+    .card10 {
+        background-image: url(https://i.pinimg.com/564x/55/4d/51/554d51679261af6d90259d8b630de8f1.jpg);
+    }
+    
+    .card11 {
+        background-image: url(https://i.pinimg.com/564x/55/4d/51/554d51679261af6d90259d8b630de8f1.jpg);
+    }
+    
+    .card12 {
+        background-image: url(https://i.pinimg.com/564x/55/4d/51/554d51679261af6d90259d8b630de8f1.jpg);
+    }
+    
+    .card13 {
+        background-image: url(https://i.pinimg.com/564x/55/4d/51/554d51679261af6d90259d8b630de8f1.jpg);
+    }
+    
+    .card14 {
+        background-image: url(https://i.pinimg.com/564x/55/4d/51/554d51679261af6d90259d8b630de8f1.jpg);
+    }
+    
+    .card15 {
+        background-image: url(https://i.pinimg.com/564x/55/4d/51/554d51679261af6d90259d8b630de8f1.jpg);
+    }
+    
+    .card16 {
+        background-image: url(https://i.pinimg.com/564x/55/4d/51/554d51679261af6d90259d8b630de8f1.jpg);
+    }
+}
