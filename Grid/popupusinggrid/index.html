@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chrome-style Slider Menu</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-container">
+            <ul class="nav-content">
+                <a href="#" class="nav-links">
+                    <li class="link-text">Home</li>
+                </a>
+                <a href="#" class="nav-links">
+                    <li class="link-text">About</li>
+                </a>
+                <a href="#" class="nav-links">
+                    <li class="link-text">History</li>
+                </a>
+                <a href="#" class="nav-links">
+                    <li class="link-text">Other Works</li>
+                </a>
+                <a href="#" class="nav-links">
+                    <li class="link-text">Contacts</li>
+                </a>
+                <a href="#" class="nav-links">
+                    <li class="link-text">Inbox</li>
+                </a>
+                <a href="#" class="nav-links">
+                    <li class="link-text">Quit</li>
+                </a>
+                <a href="#" class="nav-links">
+                    <li class="link-text">Playlist</li>
+                </a>
+                <a href="#" class="nav-links">
+                    <li class="link-text">Friends</li>
+                </a>
+                <a href="#" class="nav-links">
+                    <li class="link-text">Acknowledgement</li>
+                </a>
+            </ul>
+        </nav>
+        <button id="toggleButton" class="toggle-button">☰</button>
+    </header>
+    <main>
+        <div class="hero-section">
+            <h1 class="hero-text">Welcome to our website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, doloribus molestiae suscipit unde tempore aliquam quaerat numquam quae placeat ratione. Incidunt necessitatibus dicta repudiandae distinctio tempora labore animi expedita eaque!</p>
+        </div>
+        <div class="banner-section">
+            <h2>Let's move forward</h2>
+        </div>
+        <div class="product-section">
+            <!-- Assuming the backend is rendering these dynamically -->
+            <div class="card">
+                <img src="../../Animation/Animation-Efects-Timing.jpg" alt="{{ product.title }}">
+                <h2>{{ product.title }}</h2>
+                <p>{{ product.price }}</p>
+            </div>
+            <div class="card">
+                <img src="../../Animation/Animation-Efects-Timing.jpg" alt="{{ product.title }}">
+                <h2>{{ product.title }}</h2>
+                <p>{{ product.price }}</p>
+            </div>
+            <div class="card">
+                <img src="../../Animation/Animation-Efects-Timing.jpg" alt="{{ product.title }}">
+                <h2>{{ product.title }}</h2>
+                <p>{{ product.price }}</p>
+            </div>
+            <div class="card">
+                <img src="../../Animation/Animation-Efects-Timing.jpg" alt="{{ product.title }}">
+                <h2>{{ product.title }}</h2>
+                <p>{{ product.price }}</p>
+            </div>
+            <div class="card">
+                <img src="../../Animation/Animation-Efects-Timing.jpg" alt="{{ product.title }}">
+                <h2>{{ product.title }}</h2>
+                <p>{{ product.price }}</p>
+            </div>
+            <div class="card">
+                <img src="../../Animation/Animation-Efects-Timing.jpg" alt="{{ product.title }}">
+                <h2>{{ product.title }}</h2>
+                <p>{{ product.price }}</p>
+            </div>
+            <div class="card">
+                <img src="../../Animation/Animation-Efects-Timing.jpg" alt="{{ product.title }}">
+                <h2>{{ product.title }}</h2>
+                <p>{{ product.price }}</p>
+            </div>
+            <div class="card">
+                <img src="../../Animation/Animation-Efects-Timing.jpg" alt="{{ product.title }}">
+                <h2>{{ product.title }}</h2>
+                <p>{{ product.price }}</p>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            document.querySelector('.navbar-container').classList.toggle('expanded');
+        });
+    </script>
+</body>
+
+</html>
